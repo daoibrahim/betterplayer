@@ -11,7 +11,7 @@ import 'package:better_player/src/video_player/video_player.dart';
 import 'package:flutter/material.dart';
 
 // Package imports:
-import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
+//import 'package:flutter_widget_from_html_core/flutter_widget_from_html_core.dart';
 
 class BetterPlayerSubtitlesDrawer extends StatefulWidget {
   final List<BetterPlayerSubtitle> subtitles;
@@ -165,10 +165,10 @@ class _BetterPlayerSubtitlesDrawerState
   }
 
   Widget _buildHtmlWidget(String text, TextStyle textStyle) {
-    return HtmlWidget(
+    return Text(text)/*HtmlWidget(
       text,
       textStyle: textStyle,
-    );
+    )*/;
   }
 
   BetterPlayerSubtitlesConfiguration setupDefaultConfiguration() {
